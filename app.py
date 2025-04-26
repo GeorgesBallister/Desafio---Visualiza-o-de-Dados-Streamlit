@@ -24,7 +24,7 @@ st.markdown("""
 # --- CARREGAR DADOS ---
 @st.cache_data
 def load_data():
-    data = pd.read_csv('../sales_data.csv')
+    data = pd.read_csv('./sales_data.csv')
     return data
 
 df = load_data()
