@@ -14,7 +14,11 @@ identificar oportunidades de crescimento e sugerir melhorias baseadas nos dados 
 """)
 
 st.markdown("""
-Alem de nos proporcionar vizualisações 
+Alem de nos proporcionar vizualisações dos dados, com esta analise, eu consegui visualizar possiveis estrategias que podem ser tomadas para entregar de forma mais acertiva resultados que se converta em retorno financeiro positivo!
+            """)
+
+st.markdown("""
+> Codigo desenvolvido por **Georges Ballister**.
             """)
 
 # --- CARREGAR DADOS ---
