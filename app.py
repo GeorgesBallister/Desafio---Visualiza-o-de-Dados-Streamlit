@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+import calendar
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(page_title="Análise de Vendas", layout="wide")
@@ -42,7 +46,6 @@ df['Month'] = df['Date_Sold'].dt.month
 
 # --- ANÁLISES ---
 
-import calendar
 
 # Vendas por Mês
 st.header('📈 Vendas por Mês')
@@ -143,8 +146,7 @@ st.markdown("""
 st.header('📈 Previsão de Vendas por Categorias')
 
 
-from sklearn.linear_model import LinearRegression
-import numpy as np
+
 
 # Agrupar vendas por Categoria e Mês
 sales_category_month = df.groupby(['Month', 'Category'])['Total_Sales'].sum().reset_index()
